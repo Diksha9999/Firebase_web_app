@@ -1,0 +1,55 @@
+<html>
+<head>
+<title> Firebase Login</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<body>
+
+<div id="login_div" class="main-div">
+<h3> Firebase Web login Example</h3>
+<input type="email" placeholder="Email..." id="email_field"/>
+<input type="password" placeholder="Password..." id="password_field"/>
+
+<button onclick="login()">Login to Account </button>
+
+</div>
+<div id="user_div" class="loggedin-div">
+ <h3> Welcome User</h3>
+ <p id="user_para">Welcome to Firebase web Login Example.You're currently logged in. </p>
+ <button onclick="logout()"> Logout </button>
+
+</div>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyDhuHntZMYwzvYHZf3JUPJLjy5d20sm3Zw",
+    authDomain: "dmproject-3254a.firebaseapp.com",
+    databaseURL: "https://dmproject-3254a.firebaseio.com",
+    projectId: "dmproject-3254a",
+    storageBucket: "dmproject-3254a.appspot.com",
+    messagingSenderId: "931217188691",
+    appId: "1:931217188691:web:205454d3735f85009a23a6",
+    measurementId: "G-C51R8QL1YH"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="index.js"></script>
+
+</body>
+</head>
+</html>
